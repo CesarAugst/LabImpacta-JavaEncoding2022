@@ -6,10 +6,7 @@ public class DesafioLogica_01 {
 
     public String areMoreLessOrEqualNumbers(int x, int y){
         if (x != y) {
-            int more = (x > y ? x : y);
-            int less = (x < y ? x : y);
-
-            return ("O número maior é: " + more + " e o numero menor é: " + less);
+            return ("O número maior é: " + Math.max(x, y) + " e o numero menor é: " + Math.min(x, y));
         }else{
             return "Os números são iguais";
         }

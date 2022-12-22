@@ -19,10 +19,10 @@ public class DesafioLogica_03 {
     }
 
     public String getSituation(int age){
-        if(age > 55){
-            return "Pfizer ou Moderna";
-        }else{
+        if(age >=45 || age <= 15){
             return "Astrazeneca";
+        }else{
+            return "Pfizer ou Moderna";
         }
     }
 
