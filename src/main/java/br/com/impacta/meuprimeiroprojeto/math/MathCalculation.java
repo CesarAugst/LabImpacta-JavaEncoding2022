@@ -8,37 +8,41 @@ public class MathCalculation {
         System.out.println("x is " + x + " to "+ nome +"s calculation!!!");
     }
     public int somar(int y, int z){
-        int x = y + z;
-        return x;
+        return y += z;
     }
 
     public int subtrair(int y, int z){
-        int x = y -z;
-        return x;
+        return y -= z;
     }
 
     public int module(int y, int z){
-        int x = y % z;
-        return x;
+        return y %= z;
     }
 
     public int multiplicar(int y, int z){
-        int x = y * z;
-        return x;
+        return y *= z;
     }
 
     public int dividir(int y, int z){
-        int x = y / z;
-        return x;
+        return y /= z;
     }
     public int incrementar(int y){
-        int x = y++;
-        return x;
+        return y++;
     }
     public int decrementar(int y){
-        int x = y--;
-        return x;
+        return y--;
     }
+
+    public boolean valideAnd(int x,int y){
+        return (x == 10 && y != 2);
+    }
+    public boolean valideOr(int x,int y){
+        return (x == 10 || y != 2);
+    }
+    public boolean valideNo(int x){
+        return (x != 10);
+    }
+
 
 
     public static void main(String[] args) {
@@ -57,21 +61,37 @@ public class MathCalculation {
 //        MathCalculation mathCalculation = new MathCalculation();
 //        mathCalculation.playMath(nome, x, fator);
 
-        MathCalculation mathCalculation = new MathCalculation();
-        int resultadoSoma = mathCalculation.somar(5,2);
-        int resultadoSubtracao = mathCalculation.subtrair(5,2);
-        int resultadoDivisao = mathCalculation.dividir(5,2);
-        int resultadoMultiplicacao = mathCalculation.multiplicar(5,2);
-        int resultadoModulo = mathCalculation.module(5,2);
-        int incrementar = mathCalculation.incrementar(resultadoSoma);
-        int decrementar = mathCalculation.decrementar(resultadoMultiplicacao);
+//        MathCalculation mathCalculation = new MathCalculation();
+//        int resultadoSoma = mathCalculation.somar(5,2);
+//        int resultadoSubtracao = mathCalculation.subtrair(5,2);
+//        int resultadoDivisao = mathCalculation.dividir(5,2);
+//        int resultadoMultiplicacao = mathCalculation.multiplicar(5,2);
+//        int resultadoModulo = mathCalculation.module(5,2);
+//        int incrementar = mathCalculation.incrementar(resultadoSoma);
+//        int decrementar = mathCalculation.decrementar(resultadoMultiplicacao);
+//
+//        System.out.println("Resultado Soma " + resultadoSoma);
+//        System.out.println("Resultado Subtracao " + resultadoSubtracao);
+//        System.out.println("Resultado Divisao " + resultadoDivisao);
+//        System.out.println("Resultado Multiplicacao " + resultadoMultiplicacao);
+//        System.out.println("Resultado Modulo " + resultadoModulo);
+//        System.out.println("Resultado incrementar " + incrementar);
+//        System.out.println("Resultado decrementar " + decrementar);
 
-        System.out.println("Resultado Soma " + resultadoSoma);
-        System.out.println("Resultado Subtracao " + resultadoSubtracao);
-        System.out.println("Resultado Divisao " + resultadoDivisao);
-        System.out.println("Resultado Multiplicacao " + resultadoMultiplicacao);
-        System.out.println("Resultado Modulo " + resultadoModulo);
-        System.out.println("Resultado incrementar " + incrementar);
-        System.out.println("Resultado decrementar " + decrementar);
+        MathCalculation mathCalculation = new MathCalculation();
+        System.out.println("and");
+        System.out.println(mathCalculation.valideAnd(5, 2));
+        System.out.println(mathCalculation.valideAnd(5, 3));
+        System.out.println(mathCalculation.valideAnd(10, 2));
+        System.out.println(mathCalculation.valideAnd(10, 3));
+        System.out.println("or");
+        System.out.println(mathCalculation.valideOr(5, 2));
+        System.out.println(mathCalculation.valideOr(5, 3));
+        System.out.println(mathCalculation.valideOr(10, 2));
+        System.out.println(mathCalculation.valideOr(10, 3));
+        System.out.println("no");
+        System.out.println(mathCalculation.valideNo(5));
+        System.out.println(mathCalculation.valideNo(10));
+
     }
 }
