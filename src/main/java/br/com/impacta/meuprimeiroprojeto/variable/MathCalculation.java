@@ -1,6 +1,4 @@
-package br.com.impacta.meuprimeiroprojeto.math;
-
-import java.util.Scanner;
+package br.com.impacta.meuprimeiroprojeto.variable;
 
 public class MathCalculation {
     public void playMath(String nome, int x, int fatorMultiplicacao){
