@@ -18,5 +18,17 @@ public class DesafioLogica_08 {
         System.out.print("Consumo médio: ");
         float media = scanner.nextFloat();
 
+        double capacidadeTotal = (height * width * fill) / 1000;
+
+        double autonomia = (capacidadeTotal / media);
+
+        if(autonomia < 3){
+            System.out.println("Consumo elevado");
+        }else if(autonomia <= 8){
+            System.out.println("Consumo moderado");
+        }else{
+            System.out.println("Consumo reduzido");
+        }
+        scanner.close();
     }
 }
