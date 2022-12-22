@@ -1,4 +1,4 @@
-package br.com.impacta.meuprimeiroprojeto;
+package br.com.impacta.meuprimeiroprojeto.variable;
 import java.util.Scanner;
 
 public class NameRead {

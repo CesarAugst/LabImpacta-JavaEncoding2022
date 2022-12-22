@@ -1,4 +1,4 @@
-package br.com.impacta.meuprimeiroprojeto;
+package br.com.impacta.meuprimeiroprojeto.variable;
 
 public class ProgramaUm {
     public static void main(String[] args) {//declara numero
