@@ -10,7 +10,7 @@ public class DesafioLogica_01 {
             for (int index2 = 0; index2 < nums1.length;index2++){
                 int num2 = nums1[index2];
                 if(num1 + num2 == target1){
-                    response = "num1[" + num1 + "] + num1[" + num2 + "] = target1 (" +target1+")";
+                    response = "num1[" + index + "] + num1[" + index2 + "] = target1 (" +target1+")";
                 }
             }
         }
@@ -22,7 +22,7 @@ public class DesafioLogica_01 {
             for (int index2 = 0; index2 < nums2.length;index2++){
                 int num2 = nums2[index2];
                 if(num1 + num2 == target2){
-                    response = "num1[" + num1 + "] + num1[" + num2 + "] = target2 (" +target2+")";
+                    response = "num1[" + index + "] + num1[" + index2 + "] = target2 (" +target2+")";
                 }
             }
         }
@@ -34,7 +34,7 @@ public class DesafioLogica_01 {
             for (int index2 = 0; index2 < nums3.length;index2++){
                 int num2 = nums3[index2];
                 if(num1 + num2 == target3){
-                    response = "num3[" + num1 + "] + num3[" + num2 + "] = target3 (" +target3+")";
+                    response = "num3[" + index + "] + num3[" + index2 + "] = target3 (" +target3+")";
                 }
             }
         }
